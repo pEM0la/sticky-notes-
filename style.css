@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+  }
+  body {
+    background: linear-gradient(to left bottom, #e0badd, #ba92cc);
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    /* overflow: hidden; */
+  }
+  #stickies-container {
+    padding: 1rem;
+  }
+  .drag {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .sticky {
+    background: linear-gradient(to left bottom, #a7d491, #a7d491);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #511253;
+    /* 0 0 150px rgba(0, 0, 0, 0.2); */
+    cursor: grab;
+    display: inline-block;
+    padding: 1rem;
+    position: absolute;
+    width: 12.5rem;
+  }
+  .sticky h3,
+  .sticky p {
+    /* color: #0065b3; */
+    color: #00243f;
+    pointer-events: none;
+  }
+  .sticky h3 {
+    border-bottom: dashed 2px #12531b;
+    margin: 0 0 1rem;
+    min-height: 1.3rem;
+    padding: 0 1.5rem 0.25rem 0;
+  }
+  .sticky p {
+    margin: 0;
+    min-height: 9rem;
+  }
+  .sticky .deletesticky {
+    color: #12531b;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    right: 0.8rem;
+    top: 0.4rem;
+  }
+  
+  .sticky-form {
+    bottom: 1rem;
+    position: absolute;
+    right: 1rem;
+  }
+  .sticky-form label,
+  .sticky-form input,
+  .sticky-form textarea {
+    color: rgb(121, 91, 122);
+    display: block;
+  }
+  .sticky-form input,
+  .sticky-form textarea {
+    background-color: #f0f9ff44;
+    background-clip: padding-box;
+    border: 2px dashed #511253;
+    border-radius: 0.25rem;
+    color: #00243f;
+    font-family: 'Courier Prime', monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    padding: 0.375rem 0.75rem;
+    width: calc(100% - 1.5rem);
+  }
+  .sticky-form input:focus,
+  .sticky-form textarea:focus {
+    border: 2px dashed #ffffff;
+    outline: none;
+  }
+  button.button {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    background-color: #c7ff9a;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: #511253;
+    display: inline-block;
+    font-family: 'Courier Prime', monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    user-select: none;
+    vertical-align: middle;
+  }
